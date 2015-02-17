@@ -1,0 +1,10 @@
+class Base {
+public:
+	Base(int health, int attack);
+	~Base();
+	int getHealth();
+	int getAttack();
+private:
+	int mHealth;
+	int mAttack;
+};

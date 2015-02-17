@@ -1,0 +1,6 @@
+#include "Base.h"
+
+class Skeleton : public Base
+{
+
+};
