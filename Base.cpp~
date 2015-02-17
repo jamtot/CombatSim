@@ -1,6 +1,0 @@
-#include "Base.h"
-
-Base::Base(int health, int attack) : mHealth(health), mAttack(attack) {}
-Base::~Base(){}
-int Base::getAttack() { return mAttack; }
-int Base::getHealth() { return mHealth; }
