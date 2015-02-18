@@ -5,10 +5,10 @@ all: CombatSim.o Game.o
 	$(CC) $(CFLAGS) CombatSim.o Game.o -o Sim
 
 CombatSim.o: CombatSim.cpp Game.cpp Game.h Combatant.h
-	$(CC) $(CFLAGS) -c CombatSim.cpp
+	$(CC) $(CFLAGS) CombatSim.cpp -c CombatSim.o
 
 Game.o: Game.cpp Game.h Combatant.h
-	$(CC) $(CFLAGS) -c Game.cpp
+	$(CC) $(CFLAGS) Game.cpp -c Game.o
 
 clean:
 	rm -f *.o Sim
